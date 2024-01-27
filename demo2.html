@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add your custom styles here */
+
+        .projects-section {
+            padding: 20px;
+        }
+
+        .project-card {
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .card-overlay {
+            position: absolute;
+            bottom: -25%;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        .project-card:hover .card-overlay {
+            bottom: 0;
+            opacity: 1;
+        }
+
+        .project-name {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Modal Style */
+        .popup-modal {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container projects-section" id="projects">
+        <h2 class="section-title">Projects Done</h2>
+
+        <div class="row project-list">
+            <!-- Project 1 -->
+            <div class="col-md-4 project-card">
+                <div class="card">
+                    <a href="#" class="card-img-top popup-trigger" data-project-id="project1">
+                        <img src="abdul wadood6.jpg" alt="Project 1 Image">
+                    </a>
+                    <div class="card-overlay">
+                        <p class="project-name">Live Website</p>
+                        <p class="card-text">
+                            <strong>Live Website:</strong> HTML CSS JS PHP-based website for a Hotel with MySQL database, online bookings, and Admin page that displays all booking data
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <!-- Add more projects as needed -->
+
+        </div>
+
+        <!-- Additional project details -->
+        <!-- Project 1 Modal -->
+        <div id="project1Modal" class="popup-modal mfp-hide">
+            <img src="abdul wadood4.jpg" alt="Additional Image 1">
+            <img src="abdul wadood5.jpg" alt="Additional Image 2">
+            <!-- Add more images for the project -->
+        </div>
+
+        <!-- Project 2 Modal -->
+        <!-- Add more modals for each project -->
+
+        <div class="project-details">
+            <!-- Add project details as before -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize Magnific Popup for images
+            $('.popup-trigger').on('click', function () {
+                var projectId = $(this).data('project-id');
+                $('#' + projectId + 'Modal').magnificPopup({
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    }
+                }).magnificPopup('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
