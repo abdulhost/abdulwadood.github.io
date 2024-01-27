@@ -308,7 +308,7 @@ padding: 10px; /* Add padding for a smoother transition */
   .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0;
+/*     margin: 20px 0; */
   }
 
   /* Style for the column within the row - Medium size (col-md-4) */
