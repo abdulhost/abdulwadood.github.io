@@ -1,0 +1,181 @@
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    
+    .navbar i {
+        font-size: 14px;
+        margin-right: 5px;
+        /* color: #fff; */
+    }
+
+    .navbar {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    h1,
+    .lead {
+        color: white;
+        font-size: 27px;
+        top: 21vh;
+
+    }
+  
+        
+    .social-icons i {
+        font-size: 28px;
+
+    }
+    .social-icons {
+        top: 20vh;
+
+    }
+    .resume {
+        /* width: 30%; */
+        top: 26vh;
+    }
+
+    .document-download {
+        font-size: 10px;
+    }
+
+    .document-title {
+        font-size: 15px;
+    }
+
+    .document-download a {
+        padding-top: 7px;
+
+    }
+
+    .quote {
+        font-size: 20px;
+        top: 55vh;
+        left: 0;
+    }
+
+    .about-section span {
+
+        font-size: 42px;
+
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .card-text {
+        color: #666;
+        font-size: 14px;
+        padding: 2px;
+    }
+    .project-name {
+        font-size: 18px;
+        margin-bottom: 0px;
+
+    }
+    .testimony span {
+        font-size: 35px;
+    }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 768px) {
+    .container-fluid {
+        background: url('abdul wadood6.jpg') center/cover no-repeat;
+        min-height: 100vh;
+      }
+    .container.center-content {
+        margin-left: 141px;
+    }
+    .social-icons i {
+        font-size: 23px;
+    }
+    .social-icons {
+        top: 9vh;
+
+    }
+    .navbar i {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .navbar {
+        font-size: 11px;
+        font-weight: 600;
+    }
+    h1, .lead {
+        font-size: 27px;
+        top: 10vh;
+        margin-left: -57px;
+    }
+
+  
+
+    .resume {
+        width: 30%;
+        top: 15vh;
+        margin-left: 100px;
+    }
+    
+    .document-download {
+        font-size: 10px;
+    }
+
+    .document-title {
+        font-size: 15px;
+    }
+
+    .document-download a {
+        padding-top: 7px;
+
+    }
+
+    .quote {
+        font-size: 20px;
+        top: 50vh;
+        left: 0;
+    }
+   
+    .about-section span {
+
+        font-size: 42px;
+
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .card-text {
+        color: #666;
+        font-size: 14px;
+        padding: 2px;
+    }
+    .project-name {
+        font-size: 18px;
+        margin-bottom: 0px;
+
+    }
+    .testimony span {
+        font-size: 35px;
+    }
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+;
