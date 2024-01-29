@@ -248,6 +248,102 @@
         left: -76px;
     
     }}
+@media screen and (max-device-width: 440px) {
+    .container.center-content {
+        margin-left: 0px;
+    }
+    h1{
+        font-weight: 900;
+    }
+    h1, .lead {
+        font-size: 21px;
+        top: 10vh;
+        width: fit-content;
+        
+        left: 0px;
+        margin-left: 0;
+    }
+   
+    .container.center-content {
+        margin-left: 0;
+    }
+    .social-icons {
+        left: 40px;
+    }
+    .quote {
+        font-size: 16px;
+        left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .navbar {
+        top: 0;
+        left: 0;
+        height: fit-content;
+        padding: 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .resume {
+        width: 58%;
+        top: 10vh;
+        margin-left: 0px;
+    }
+    .document-download {
+        font-size: 10px;
+    }
+    .document-title {
+        top: 4px;
+        font-size: 12px;
+    }
+    .container-fluid {
+        background: url('abdul\ wadood5.jpg') center/cover no-repeat;
+        min-height: 100vh;
+    }
+    .sticky-navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 3px;
+        margin: 1px 0;
+        display: block;
+        font-size: 9px;
+    }
+    .navbar i {
+        font-size: 11px;
+        margin-right: 5px;
+    }
+    .testimony>.card {
+        height: 122px;
+    }
+    .right-side {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 9px;
+        font-size: 10px;
+    }
+    .list-group {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    .col-md-4 {
+        flex: 0 0 49.333333%;
+        max-width: 50.333333%;
+        padding: 5px;
+    }
+    .section-title {
+        font-size: 17px;
+    }
+    .testimony span {
+        font-size: 18px;
+    }
+    .about-section span {
+        font-size: 27px;
+    }
+}
 /* For iPhone 4 Portrait or Landscape View */
 @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {}
 
