@@ -79,7 +79,7 @@
             ">
                   <h5 class="document-title">Resume</h5>
                   <div class="document-download">
-                      <a href="resume.pdf" target="_blank"><i class="bx bx-file"></i> View Online</a>
+                      <a href="resume.pdf" target="_blank"><i class="bx bx-file" style="font-size: 20px; margin-top: 5px;"></i> View Online</a>
                       <a href="resume.pdf" download><i class="bx bx-cloud-download"></i> Download</a>
                   </div>
               </div>
@@ -498,20 +498,25 @@
   <script>
     // JavaScript to handle sticky navbar
 
-    window.onscroll = function () {
-      stickyNavbar()
-    };
+       window.onscroll = function () {
+  stickyNavbar();
+};
 
-    var navbar = document.getElementById("mainNavbar");
-    var sticky = navbar.offsetTop;
+var navbar = document.getElementById("mainNavbar");
+var sticky = navbar.offsetTop;
 
-    function stickyNavbar() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky-navbar");
-      } else {
-        navbar.classList.remove("sticky-navbar");
-      }
-    }
+function stickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky-navbar");
+  } else {
+    navbar.classList.remove("sticky-navbar");
+  }
+
+  // Additional condition for mobile to remove sticky class at top
+  if (window.innerWidth <= 768 && window.pageYOffset === 0) {
+    navbar.classList.remove("sticky-navbar");
+  }
+}
 
 
     // JavaScript to handle smooth scrolling and offset for fixed navbar
