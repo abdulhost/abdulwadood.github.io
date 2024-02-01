@@ -216,11 +216,7 @@
     </p>
   </div> -->
 
-
-  </div>
-
-
-  <div class="container">
+ <div class="container">
     <div class="row">
       <div class="col-md-4">
         <div class="card project-card">
@@ -354,6 +350,10 @@
     </div>
   </div>
 
+  </div>
+
+
+ 
   <!-- Modal for Image 1 -->
   <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -542,6 +542,31 @@ function stickyNavbar() {
       });
     });
 
+    document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("scroll", function() {
+    var scrollPosition = window.scrollY;
+
+    // Check the position of each section and add the active class to the corresponding anchor
+    document.querySelectorAll('.navbar a').forEach(function(navLink) {
+      var targetId = navLink.getAttribute('href').substring(1);
+      var targetSection = document.getElementById(targetId);
+      var navbarHeight = 100;
+
+      if (targetSection) {
+        var sectionRect = targetSection.getBoundingClientRect();
+
+        if (
+          sectionRect.top <= navbarHeight &&
+          sectionRect.bottom >= navbarHeight
+        ) {
+          navLink.classList.add('active');
+        } else {
+          navLink.classList.remove('active');
+        }
+      }
+    });
+  });
+});
 
 
   </script>
