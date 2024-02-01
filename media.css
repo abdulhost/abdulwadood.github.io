@@ -91,7 +91,7 @@
 /* For Mobile Phones Portrait or Landscape View */
 @media screen and (max-device-width: 768px) {
     .container-fluid {
-        background: url('abdul wadood6.jpg') center/cover no-repeat;
+        /* background: url('abdul wadood6.jpg') center/cover no-repeat; */
         min-height: 100vh;
     }
 
@@ -263,7 +263,17 @@
         left: 0px;
         margin-left: 0;
     }
-   
+    .navbar {
+        font-size: 13px;
+    }
+    .sticky-navbar a:first-child {
+        display: flex;
+        font-weight: 700;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
     .container.center-content {
         margin-left: 0;
     }
@@ -274,6 +284,7 @@
         font-size: 16px;
         left: 50%;
     transform: translate(-50%, -50%);
+    top: 33vh;
     }
     .navbar {
         top: 0;
@@ -299,16 +310,11 @@
         font-size: 12px;
     }
     .container-fluid {
-        background: url('abdul\ wadood5.jpg') center/cover no-repeat;
-        min-height: 100vh;
+        /* background: url('abdul\ wadood5.jpg') center/cover no-repeat; */
+        min-height: 60vh;
     }
     .sticky-navbar a {
-        color: white;
-        text-decoration: none;
-        padding: 3px;
-        margin: 1px 0;
-        display: block;
-        font-size: 9px;
+        font-size: 13px;
     }
     .navbar i {
         font-size: 11px;
@@ -353,4 +359,3 @@
 /* For iPhone 6 and 6 plus Portrait or Landscape View */
 @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}
 
-;

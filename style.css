@@ -302,7 +302,10 @@ padding: 10px; /* Add padding for a smoother transition */
     font-size: 18px;
     line-height: 1.6; /* Line height for better readability */
     margin-bottom: 15px; /* Bottom margin for each paragraph */
-    text-align: center;
+    /* text-align: center; */
+
+      margin: 10px;
+  
   }
   
   /* Additional styling for skills list */
@@ -501,7 +504,7 @@ padding: 10px; /* Add padding for a smoother transition */
     opacity: 1;
   }
   .modal-dialog {
-    max-width: 70% !important;
+    max-width: 747px !important;
   }
 
   /* testimony */
