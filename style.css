@@ -43,11 +43,29 @@ body {
     display: block;
   }
 
-  .navbar a:hover {
-    background-color: #555;
+  .navbar a:hover,
+  .navbar a:hover i {
+      color: greenyellow;
+  }
+  .navbar a:hover{
+    transform: scale(1.04);
+    transition: transform 0.3s ease-in-out;
   }
 
+  .navbar a {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
 
+.navbar a:hover {
+    transform: scale(1.04);
+}
+.sticky-navbar a:first-child {
+  color: whitesmoke;
+}
+.navbar a.active {
+  color: greenyellow;
+}
 
 /* Style for the buttons container */
 .buttons-container {
@@ -210,7 +228,7 @@ display: block; /* Ensures the name appears on a new line */
 
   .navbar {
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   /* New styles for the green underline */
@@ -253,9 +271,9 @@ padding: 10px; /* Add padding for a smoother transition */
   display: block;
   font-size: 17px;
 }
-  .sticky-navbar a:hover {
+  /* .sticky-navbar a:hover {
     background-color:  #555;
-  }
+  } */
   .navbar a:first-child {
     display: none; /* Hide the first anchor tag in sticky state */
   }
