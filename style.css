@@ -1,68 +1,71 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  .container-fluid {
-    background: url('abdul wadood4.jpg') center/cover no-repeat;
-    opacity: 0.8;
-    position: relative;
-    min-height: 100vh;
-  }
+.container-fluid {
+  background: url('abdul wadood4.jpg') center/cover no-repeat;
+  opacity: 0.8;
+  position: relative;
+  min-height: 100vh;
+}
 
-  .container-fluid:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+.container-fluid:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-  .navbar {
-    position: absolute;
-    top: 25%;
-    left: 0;
-    height: 50vh;
-    background-color: rgba(51, 51, 51, 0.3);
-    padding: 4px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 1000;
-    justify-content: space-evenly;
-  }
+.navbar {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: 50vh;
+  background-color: rgba(51, 51, 51, 0.3);
+  padding: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1000;
+  justify-content: space-evenly;
+}
 
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 3px;
-    margin: 3px 0;
-    display: block;
-  }
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+  margin: 3px 0;
+  display: block;
+}
 
-  .navbar a:hover,
-  .navbar a:hover i {
-      color: greenyellow;
-  }
-  .navbar a:hover{
-    transform: scale(1.04);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .navbar a {
-    transform: scale(1);
-    transition: transform 0.3s ease-in-out;
+.navbar a:hover,
+.navbar a:hover i {
+  color: greenyellow;
 }
 
 .navbar a:hover {
-    transform: scale(1.04);
+  transform: scale(1.04);
+  transition: transform 0.3s ease-in-out;
 }
+
+.navbar a {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  transform: scale(1.04);
+}
+
 .sticky-navbar a:first-child {
   color: whitesmoke;
 }
+
 .navbar a.active {
   color: greenyellow;
 }
@@ -81,6 +84,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .document-card {
   position: relative;
   background-color: #fff;
@@ -122,9 +126,11 @@ body {
 #documents .card-body {
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
-.document{
+
+.document {
   max-width: 1140px;
-} 
+}
+
 .resume {
   position: relative;
   border: 1px solid #e6e6e6;
@@ -133,10 +139,11 @@ body {
   transition: transform 0.3s ease;
   width: 26%;
   height: 100%;
-  top: 25vh;}
+  top: 25vh;
+}
 
- /* Style for the document title */
- .document-title {
+/* Style for the document title */
+.document-title {
   margin: 0;
   font-size: 18px;
   color: #333;
@@ -156,12 +163,14 @@ body {
   align-items: center;
   text-decoration: none;
   /* padding: 8px; */
-  color: #007bff; /* Link color */
+  color: #007bff;
+  /* Link color */
   transition: color 0.3s ease;
 }
 
 .document-download a:hover {
-  color: #0056b3; /* Hover color */
+  color: #0056b3;
+  /* Hover color */
 }
 
 /* Style for the cloud download icon */
@@ -170,35 +179,39 @@ body {
   font-size: 20px;
 }
 
-  .container.center-content {
-    position: relative;
-    z-index: 1;
-    /* margin-left: 250px; */
-  }
+.container.center-content {
+  position: relative;
+  z-index: 1;
+  /* margin-left: 250px; */
+}
 
-  h1, .lead {
-    color: white;
-    font-size: 40px;
-    top: 30vh;
-    position: relative;
-  }
+h1,
+.lead {
+  color: white;
+  font-size: 40px;
+  top: 30vh;
+  position: relative;
+}
 
-  .lead {
-    font-weight: 400;
-    font-size: 32px;
-  }
-  .quote {
-font-weight: 400;
-font-size: 25px;
-color: white;
-top: 52vh;
-position: relative;
-/* text-align: right; */
-width: max-content;
-left: 15%}
+.lead {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.quote {
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+  top: 52vh;
+  position: relative;
+  /* text-align: right; */
+  width: max-content;
+  left: 15%
+}
 
 .author-name {
-display: block; /* Ensures the name appears on a new line */
+  display: block;
+  /* Ensures the name appears on a new line */
   text-align: right;
   right: 20px;
   position: absolute;
@@ -206,64 +219,69 @@ display: block; /* Ensures the name appears on a new line */
 }
 
 
-  .social-icons {
-    top: 30vh;
-    position: relative;
-    margin-top: 20px;
-    left: 40px;
-    max-width: fit-content;
-  }
-
-  .social-icons i {
-    font-size: 36px;
-    margin-right: 10px;
-    color: #fff;
-  }
-
-  .navbar i {
-    font-size: 20px;
-    margin-right: 10px;
-    color: #fff;
-  }
-
-  .navbar {
-    font-size: 21px;
-    font-weight: 500;
-  }
-
-  /* New styles for the green underline */
-  .green-underline {
-    border-bottom: 2px solid #ffd400; /* Green color */
-  }
-   /* New styles for About and Projects sections */
-   .about-section,
-  .projects-section {
-    color: rgb(0, 0, 0);
-    margin-top: 30px;
-  }
-
-  .section-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .project-item {
-    margin-bottom: 15px;
-  }
-   /* Sticky Navbar Styles */
-  .sticky-navbar {
-position: fixed;
-top: 0;
-width: 100%;
-background-color: rgba(51, 51, 51, 0.8);
-transition: background-color 0.3s ease, padding 0.3s ease; /* Add transition properties */
-flex-direction: row;
-height: auto;
-padding: 10px; /* Add padding for a smoother transition */
+.social-icons {
+  top: 30vh;
+  position: relative;
+  margin-top: 20px;
+  left: 40px;
+  max-width: fit-content;
 }
 
-  .sticky-navbar a {
+.social-icons i {
+  font-size: 36px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.navbar i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.navbar {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+/* New styles for the green underline */
+.green-underline {
+  border-bottom: 2px solid #ffd400;
+  /* Green color */
+}
+
+/* New styles for About and Projects sections */
+.about-section,
+.projects-section {
+  color: rgb(0, 0, 0);
+  margin-top: 30px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-item {
+  margin-bottom: 15px;
+}
+
+/* Sticky Navbar Styles */
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.8);
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  /* Add transition properties */
+  flex-direction: row;
+  height: auto;
+  padding: 10px;
+  /* Add padding for a smoother transition */
+}
+
+.sticky-navbar a {
   color: white;
   text-decoration: none;
   padding: 5px;
@@ -271,316 +289,352 @@ padding: 10px; /* Add padding for a smoother transition */
   display: block;
   font-size: 17px;
 }
-  /* .sticky-navbar a:hover {
+
+/* .sticky-navbar a:hover {
     background-color:  #555;
   } */
-  .navbar a:first-child {
-    display: none; /* Hide the first anchor tag in sticky state */
-  }
-  .sticky-navbar a:first-child {
-    display: block; /* Hide the first anchor tag in sticky state */
-    font-weight: 700;
-  }
-  #first:hover {
-    background-color: transparent; /* Remove background color on hover */
-    transform: scale(1.1); /* Scale on hover */    }
+.navbar a:first-child {
+  display: none;
+  /* Hide the first anchor tag in sticky state */
+}
+
+.sticky-navbar a:first-child {
+  display: block;
+  /* Hide the first anchor tag in sticky state */
+  font-weight: 700;
+}
+
+#first:hover {
+  background-color: transparent;
+  /* Remove background color on hover */
+  transform: scale(1.1);
+  /* Scale on hover */
+}
 
 
 /* Custom CSS for About Me section */
 .about-section {
-    color: #333; /* Text color */
-    margin-top: 30px; /* Top margin */
-    position: relative;
-  }
+  color: #333;
+  /* Text color */
+  margin-top: 30px;
+  /* Top margin */
+  position: relative;
+}
+
 .about-section h3 {
-    text-align: center;
-    font-weight: 700;
-  }
-  
-  .section-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #3b434a;
-  }
-  
-  .about-section span {
-    position: absolute;
-    /* top: 50%;  */
-    left: 50%; /* Center the span horizontally */
-    transform: translate(-50%, -50%); /* Center the span perfectly */
-    z-index: -1; /* Placing it behind the text */
-    font-weight: 700;
-    font-size: 52px;
-    color: #eef0f2; /* Adjusted color to make it lighter */
-  }
-  
-  .about-section p {
-    font-size: 18px;
-    line-height: 1.6; /* Line height for better readability */
-    margin-bottom: 15px; /* Bottom margin for each paragraph */
-    /* text-align: center; */
+  text-align: center;
+  font-weight: 700;
+}
 
-      margin: 10px;
-  
-  }
-  
-  /* Additional styling for skills list */
-  .list-group {
-    margin-top: 15px;
-  }
-  
-  .list-group-item {
-    border: none; /* Remove borders for list items */
-  }
-  
-  /* Additional margin-top for the first list item */
-  .list-group-item:first-child {
-    margin-top: 0;
-  }
-  /* Adjust styles as needed */
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3b434a;
+}
+
+.about-section span {
+  position: absolute;
+  /* top: 50%;  */
+  left: 50%;
+  /* Center the span horizontally */
+  transform: translate(-50%, -50%);
+  /* Center the span perfectly */
+  z-index: -1;
+  /* Placing it behind the text */
+  font-weight: 700;
+  font-size: 52px;
+  color: #eef0f2;
+  /* Adjusted color to make it lighter */
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  /* Line height for better readability */
+  margin-bottom: 15px;
+  /* Bottom margin for each paragraph */
+  /* text-align: center; */
+
+  margin: 10px;
+
+}
+
+/* Additional styling for skills list */
+.list-group {
+  margin-top: 15px;
+}
+
+.list-group-item {
+  border: none;
+  /* Remove borders for list items */
+}
+
+/* Additional margin-top for the first list item */
+.list-group-item:first-child {
+  margin-top: 0;
+}
+
+/* Adjust styles as needed */
 .project-list {
-    margin-bottom: 20px;
-  }
-  
-  .list-group-item {
-    border: none;
-  }
-  
-  .project-details h3 {
-    margin-top: 20px;
-  }
-  
-  .project-details ul {
-    list-style-type: none;
-  }
-  
-  .project-details p {
-    margin-top: 20px;
-  }
+  margin-bottom: 20px;
+}
 
-  .skills-container {
-    display: flex;
-  }
-  
-  .left-side {
-    flex: 1;
-  }
-  
-  .right-side {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 9px;
+.list-group-item {
+  border: none;
+}
 
-  }
-  
-  /* Add any additional styling as needed */
-  .skill-container {
-    width: 100%;
-    background-color: #ddd;
-    margin-bottom: 10px; /* Add margin for separation */
-  }
-  
-  .skills {
-    text-align: right;
-    /* padding-top: 10px; */
-    /* padding-bottom: 10px; */
-    color: white;
-  }
-  
-  .html {
-    width: 100%;
-    background-color: #2196F3;
-  }
-  
-  .css {
-    width: 90%;
-    background-color: #2196F3;
-  }
-  
-  .js {
-    width: 25%;
-    background-color: #2196F3;
-  }
-  
-  .php {
-    width: 40%;
-    background-color: #00bcd4;
-  }
-  
-  .wp {
-    width: 90%;
-    background-color: #00bcd4;
-  }
-  
-  .ps {
-    width: 80%;
-    background-color: #00bcd4;
-  }
-  .py {
-    width: 95%;
-    background-color: #00bcd4;
-  }
-    
+.project-details h3 {
+  margin-top: 20px;
+}
+
+.project-details ul {
+  list-style-type: none;
+}
+
+.project-details p {
+  margin-top: 20px;
+}
+
+.skills-container {
+  display: flex;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 9px;
+
+}
+
+/* Add any additional styling as needed */
+.skill-container {
+  width: 100%;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  /* Add margin for separation */
+}
+
+.skills {
+  text-align: right;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  color: white;
+}
+
+.html {
+  width: 100%;
+  background-color: #2196F3;
+}
+
+.css {
+  width: 90%;
+  background-color: #2196F3;
+}
+
+.js {
+  width: 25%;
+  background-color: #2196F3;
+}
+
+.php {
+  width: 40%;
+  background-color: #00bcd4;
+}
+
+.wp {
+  width: 90%;
+  background-color: #00bcd4;
+}
+
+.ps {
+  width: 80%;
+  background-color: #00bcd4;
+}
+
+.py {
+  width: 95%;
+  background-color: #00bcd4;
+}
 
 
-  /* Style for the container */
-  .container {
-    /* max-width: 1200px; */
-    max-width: fit-content;
-    margin: 0;
-  }
 
-  /* Style for the row within the container */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    /* margin: 20px 0; */
-  }
+/* Style for the container */
+.container {
+  /* max-width: 1200px; */
+  max-width: fit-content;
+  margin: 0;
+}
 
-  /* Style for the column within the row - Medium size (col-md-4) */
-  .col-md-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    padding: 5px;
-  }
+/* Style for the row within the container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 20px 0; */
+}
 
-  /* Style for the card within the column */
-  .card {
+/* Style for the column within the row - Medium size (col-md-4) */
+.col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 5px;
+}
+
+/* Style for the card within the column */
+.card {
   position: relative;
   border: 1px solid #e6e6e6;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
   width: 100%;
-  height: 100%;}
+  height: 100%;
+}
 
-  /* Style for the card image at the top of the card */
-  .card-img-top {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #e6e6e6;
-  }
+/* Style for the card image at the top of the card */
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e6e6e6;
+}
 
-  /* Style for the card overlay that appears on hover */
-  .card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
+/* Style for the card overlay that appears on hover */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
-  /* Style for the "see more" text within the card overlay */
-  .card-overlay p {
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    margin: 0;
-  }
+/* Style for the "see more" text within the card overlay */
+.card-overlay p {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
 
-  /* Style for the card text container */
-  .card-text-container {
+/* Style for the card text container */
+.card-text-container {
   padding: 1px;
   text-align: center;
   justify-content: center;
-  display: inline;}
+  display: inline;
+}
 
-  /* Style for the project name */
-  .project-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-  }
+/* Style for the project name */
+.project-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
 
-  /* Style for the card text */
-  .card-text {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.6;
+/* Style for the card text */
+.card-text {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
   padding: 5px;
 
-  }
+}
 
-  /* Hover effect for the card - scale up */
-  .card:hover {
-    transform: scale(1.05);
-  }
+/* Hover effect for the card - scale up */
+.card:hover {
+  transform: scale(1.05);
+}
 
-  /* Show card overlay on hover */
-  .card:hover .card-overlay {
-    opacity: 1;
-  }
-  .modal-dialog {
-    max-width: 747px !important;
-  }
+/* Show card overlay on hover */
+.card:hover .card-overlay {
+  opacity: 1;
+}
 
-  /* testimony */
-  .testimony {
-    color: #333; /* Text color */
-    margin-top: 30px; /* Top margin */
-    position: relative;
-  }
+.modal-dialog {
+  max-width: 747px !important;
+}
+
+/* testimony */
+.testimony {
+  color: #333;
+  /* Text color */
+  margin-top: 30px;
+  /* Top margin */
+  position: relative;
+}
+
 .testimony h3 {
-    text-align: center;
+  text-align: center;
 
-  }
-  
-  .testimony {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #3b434a;
-  }
-  .testimony span {
-    position: absolute;
-    /* top: 50%;  */
-    left: 50%; /* Center the span horizontally */
-    transform: translate(-50%, -50%); /* Center the span perfectly */
-    z-index: -1; /* Placing it behind the text */
-    font-weight: 700;
-    font-size: 47px;
-    color: #eef0f2; /* Adjusted color to make it lighter */
-  }
-   /* Card styles */
-   .testimony >.card {
-    display: block;
-    position: relative;
-    width: 95%;
-    height: 303px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgb(10 10 10 / 61%);
-    margin: auto;}
+}
+
+.testimony {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3b434a;
+}
+
+.testimony span {
+  position: absolute;
+  /* top: 50%;  */
+  left: 50%;
+  /* Center the span horizontally */
+  transform: translate(-50%, -50%);
+  /* Center the span perfectly */
+  z-index: -1;
+  /* Placing it behind the text */
+  font-weight: 700;
+  font-size: 47px;
+  color: #eef0f2;
+  /* Adjusted color to make it lighter */
+}
+
+/* Card styles */
+.testimony>.card {
+  display: block;
+  position: relative;
+  width: 95%;
+  height: 303px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgb(10 10 10 / 61%);
+  margin: auto;
+}
 
 /* Style the image inside the card */
-.testimony >.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.testimony>.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Add the glass effect using a pseudo-element */
-.testimony >.card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.2); /* Adjust the opacity for the glass effect */
+.testimony>.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+  /* Adjust the opacity for the glass effect */
 }
+
 .get-in-touch {
   text-align: center;
   padding: 15px;
@@ -591,8 +645,10 @@ padding: 10px; /* Add padding for a smoother transition */
 .fiverr-link {
   text-decoration: none;
   color: #333;
-  display:inline-flex; /* Make the entire block clickable */
-  margin-bottom: 0px; /* Add some space below the Fiverr logo */
+  display: inline-flex;
+  /* Make the entire block clickable */
+  margin-bottom: 0px;
+  /* Add some space below the Fiverr logo */
 }
 
 /* Style for the Fiverr logo */
@@ -603,9 +659,10 @@ padding: 10px; /* Add padding for a smoother transition */
   /* position: relative; */
   /* top: 7px; */
 
-  border-radius: 8px; /* Add a subtle border radius */
+  border-radius: 8px;
+  /* Add a subtle border radius */
 }
-  
+
 /* Style for contact details */
 .contact-details {
   margin-top: 0px;
@@ -614,13 +671,74 @@ padding: 10px; /* Add padding for a smoother transition */
 /* Style for email and location icons */
 .icon {
   font-size: 28px;
-  margin-right: 10px; /* Increase the spacing between icon and text */
-  color: #53585e; /* Use Bootstrap's primary color for icons */
+  margin-right: 10px;
+  /* Increase the spacing between icon and text */
+  color: #53585e;
+  /* Use Bootstrap's primary color for icons */
 }
-.contact-details > p{
-text-align: center;
-    margin-top: 0;
-    margin-bottom: 0rem;
-    justify-content: center;
-    display: flex;
+
+.contact-details>p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0rem;
+  justify-content: center;
+  display: flex;
+}
+
+/* certificates */
+.certificate-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* margin: 20px; */
+  overflow: hidden;
+}
+
+.certificate-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.certificate-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* height: 50%; */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
+}
+
+.certificate-card:hover .certificate-overlay {
+  transform: translateY(0%);
+}
+
+.certificate-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.certificate-description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.span-bg {
+  position: absolute;
+  /* top: 50%;  */
+  left: 50%;
+  /* Center the span horizontally */
+  transform: translate(-50%, -50%);
+  /* Center the span perfectly */
+  z-index: -1;
+  /* Placing it behind the text */
+  font-weight: 700;
+  font-size: 47px;
+  color: #eef0f2;
+  /* Adjusted color to make it lighter */
 }
