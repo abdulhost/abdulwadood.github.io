@@ -178,6 +178,22 @@
     .testimony span {
         font-size: 35px;
     }
+    .certificate-overlay {
+        transform: translateY(0);
+      }
+      .certificate-overlay {
+          position: relative;
+      }
+      .certificate-title {
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+      .certificate-description {
+        font-size: 10px;
+        margin-bottom: 0;
+
+    }
 }
 
 @media screen and (max-device-width: 579px) {
@@ -360,6 +376,11 @@
 @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}
 
 
-      
+/* Media query for touch screen devices */
+@media  screen and (max-device-width: 500px) {
+    
+
+
+  }
   
   
