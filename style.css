@@ -2,13 +2,15 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-size: 1.2rem;
 }
 
 .container-fluid {
   background: url('abdul wadood4.jpg') center/cover no-repeat;
   opacity: 0.8;
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: 600px;
 }
 
 .container-fluid:before {
@@ -317,7 +319,7 @@ h1,
 .about-section {
   color: #333;
   /* Text color */
-  margin-top: 30px;
+  margin-top: 50px;
   /* Top margin */
   position: relative;
 }
@@ -335,13 +337,11 @@ h1,
   color: #3b434a;
 }
 
-.about-section span {
+.about-section > span {
   position: absolute;
   /* top: 50%;  */
   left: 50%;
-  /* Center the span horizontally */
   transform: translate(-50%, -50%);
-  /* Center the span perfectly */
   z-index: -1;
   /* Placing it behind the text */
   font-weight: 700;
@@ -351,7 +351,7 @@ h1,
 }
 
 .about-section p {
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 1.6;
   /* Line height for better readability */
   margin-bottom: 15px;
@@ -369,6 +369,7 @@ h1,
 
 .list-group-item {
   border: none;
+  font-size: 1.3rem;
   /* Remove borders for list items */
 }
 
@@ -399,19 +400,32 @@ h1,
 }
 
 .skills-container {
-  display: flex;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .left-side {
-  flex: 1;
+  flex: 1.2;
 }
 
-.right-side {
-  flex: 1;
+/* .right-side {
+  flex: 0.8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 9px;
+
+} */
+.right-side {
+  flex: 0.8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 9px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 
 }
 
@@ -482,12 +496,14 @@ h1,
 }
 
 /* Style for the column within the row - Medium size (col-md-4) */
-.col-md-4 {
+/* .col-md-4 {
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
   padding: 5px;
+} */
+.col-md-4 {
+  margin-bottom: 14px
 }
-
 /* Style for the card within the column */
 .card {
   position: relative;
@@ -497,6 +513,7 @@ h1,
   transition: transform 0.3s ease;
   width: 100%;
   height: 100%;
+  /* z-index: 1; */
 }
 
 /* Style for the card image at the top of the card */
@@ -504,6 +521,7 @@ h1,
   width: 100%;
   height: auto;
   border-bottom: 1px solid #e6e6e6;
+  /* z-index: 1; */
 }
 
 /* Style for the card overlay that appears on hover */
@@ -519,6 +537,7 @@ h1,
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  /* z-index: 2; */
 }
 
 /* Style for the "see more" text within the card overlay */
@@ -590,13 +609,11 @@ h1,
   color: #3b434a;
 }
 
-.testimony span {
+.testimony>span {
   position: absolute;
   /* top: 50%;  */
   left: 50%;
-  /* Center the span horizontally */
   transform: translate(-50%, -50%);
-  /* Center the span perfectly */
   z-index: -1;
   /* Placing it behind the text */
   font-weight: 700;
@@ -740,6 +757,40 @@ h1,
   /* Placing it behind the text */
   font-weight: 700;
   font-size: 47px;
+  color: #eef0f2;
+  /* Adjusted color to make it lighter */
+}
+
+.language-box {
+  border: 1px solid #ddd;
+  border-radius: 50px; /* Capsule shape */
+  padding: 8px 12px;
+  text-align: center;
+  margin: 4px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px; /* Adjust height for uniformity */
+}
+.language-box i {
+  font-size: 1.3rem; /* Slightly smaller icons */
+  color: #333;
+  margin-right: 8px; /* Space between icon and text */
+}
+.language-box h4 {
+  margin: 0;
+  font-size: 1.2rem; /* Slightly smaller text */
+}
+.projects-section > span {
+  position: absolute;
+  /* top: 50%;  */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  /* Placing it behind the text */
+  font-weight: 700;
+  font-size: 52px;
   color: #eef0f2;
   /* Adjusted color to make it lighter */
 }
