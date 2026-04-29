@@ -6,7 +6,8 @@ body {
 }
 
 .container-fluid {
-  background: url('abdul wadood4.jpg') center/cover no-repeat;
+  /* background: url('abdul wadood4.jpg') center/cover no-repeat; */
+  background: url('logo-cropped.png') right/contain no-repeat;
   opacity: 0.8;
   position: relative;
   /* min-height: 100vh; */
@@ -575,7 +576,7 @@ h1,
 
 /* Hover effect for the card - scale up */
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 /* Show card overlay on hover */
