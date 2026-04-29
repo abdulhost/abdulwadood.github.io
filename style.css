@@ -795,3 +795,17 @@ h1,
   color: #eef0f2;
   /* Adjusted color to make it lighter */
 }
+
+.alert-box {
+  /* background: linear-gradient(
+    135deg,
+    #0ea5e9,
+    #38bdf8
+  ); */
+
+  color: black;
+  padding: 10px;
+  /* border-radius: 16px; */
+  /* margin: 50px 0; */
+  text-align: center;
+}
